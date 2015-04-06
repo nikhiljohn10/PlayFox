@@ -8,3 +8,36 @@ html,body{
 	top: 100px;
 	left: 100px;
 }
+
+
+.paw{
+	position:absolute;
+	z-index:10000;
+	opacity:0;
+	animation:fade 2s 1;
+	-webkit-animation:fade 2s 1;
+	transition:all 1s ease;
+	pointer-events:none
+}
+
+@-webkit-keyframes fade{
+	0%{
+		opacity:1;
+	}
+
+	100%{
+		opacity:0;
+	}
+}
+
+@keyframes fade{
+	0%{
+		opacity:1;
+	}
+
+	100%{
+		opacity:0;
+	}
+
+}
+
