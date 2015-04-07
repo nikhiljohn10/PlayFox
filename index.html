@@ -1,30 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Play Fox</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="Mozilla Kerala Portal">
-	<meta name="author" content="Mozilla Kerala">
-	<link rel="shortcut icon" href="favicon.png">
-<!-- Style Sheets -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="css/theme.css">
-	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/playfox.css">
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <meta charset="UTF-8">
+    <title>Play Fox</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Mozilla Kerala Portal">
+    <meta name="author" content="Mozilla Kerala">
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/playfox.css">
+    <link rel="stylesheet" href="css/foxyPhysics.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
 </head>
+
 <body>
-<!-- 	<div id="fox-trail">
-</div> -->
-	<h1 id='mouse-hook'>Hello World!</h1>
-<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<!--	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="/js/modernizr.min.js"></script> -->
-	<script src="js/custom.js"></script>
-	<script src="js/playfox.js"></script>
+    <div class="wrapper">
+        <!-- 
+	      Header Content
+	      ==============
+	-->
+        <header id="masthead">
+            <div class="container">
+                <a href="https://www.mozilla.org" id="tabzilla">Mozilla</a>
+                <nav id="nav-main" role="navigation">
+                    <span class="toggle" role="button">Menu</span>
+                    <ul style="" id="nav-main-menu">
+                        <li class="last"><a target="_blank" data-name="community" href="https://github.com/nikhiljohn10/PlayFox">Repo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- 
+	      Body Content
+	      ============
+	-->
+        <main>
+            <header>
+                <img class="main-logo" src="images/main-logo.png" alt="Mozilla Kerala">
+            </header>
+            <div class="events">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <div class="event-updates">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h1>Upcomming events</h1>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="row">
+                                            <div class="col-sm-5 col-md-4">
+                                                <div class="next-event">
+                                                    <div class="round-shape white date">
+                                                        <span class="month">Aug</span>
+                                                        <span class="day">04</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-7 col-md-8 text-left">
+                                                <div class="next-event">
+                                                    <div class="event-name">
+                                                        <h2><a href="#">MozCoffee @ Kochi</a></h2>
+                                                        <h4><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> August 4, 2015</h4>
+                                                        <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Kochi, Kerala, India</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-best">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1>Our Best</h1>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2><b>Mozillian of the month</b></h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-md-6 text-center">
+                                    <div class="round-shape">
+                                        <img src="https://mozillians.org/media/uploads/sorl-cache/07/f7/07f74f64885c27e9d6dab19355348f14.jpg" alt="Profile Photo">
+                                    </div>
+                                </div>
+                                <div class=" col-sm-8 col-md-6 text-left">
+                                    <h2>Nikhil John</h2>
+                                    <h4><b>Contributions:</b> HTML DevConf, Bootcamp, WoMoz Fest, MeetUps, MozCoffee, Webmakers, Webmaker Festival etc.</h4>
+                                    <button data-redirect-url="https://mozillians.org/en-US/u/nikzjon/" class="btn green durl">Find him</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2><b>App of the month</b></h2>
+                                </div>
+                            </div>
+                            <div class="row left-vertical-line">
+                                <div class="col-xs-6 col-sm-2 col-sm-offset-1">
+                                    <div class="round-shape long-box first">
+                                        <img src="https://marketplace.cdn.mozilla.net/img/uploads/previews/full/169/169978.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="round-shape long-box second">
+                                        <img src="https://marketplace.cdn.mozilla.net/img/uploads/previews/full/169/169974.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-5 col-sm-offset-1 text-left">
+                                    <h2>Run Ball Run</h2>
+                                    <h4><b>Developer : </b>Nikhil John</h4>
+                                    <button data-redirect-url="https://marketplace.firefox.com/app/run-ball-run" class="btn green durl">Go to Marketplace</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mk-stats">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-sm-4">
+                            <div class="round-shape white">
+                                <span>112</span>
+                            </div>
+                            <div class="sub-title">
+                                <span>Events</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="round-shape white">
+                                <span>1723</span>
+                            </div>
+                            <div class="sub-title">
+                                <span>Active Mozillians</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="round-shape white">
+                                <span>8214</span>
+                            </div>
+                            <div class="sub-title">
+                                <span>Learners</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h1>Get Mozilla Kerala updates</h1>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-sm-5 col-sm-offset-1">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="email" placeholder="YOUR EMAIL HERE" required />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="checkbox" required />
+                                        <span>I’m okay with Mozilla handling my info as explained in this <a href="https://www.mozilla.org/en-US/privacy/">Privacy Policy</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-sm-offset-1">
+                                <div>
+                                    <button type="submit">SIGN ME UP</button>
+                                </div>
+                                <div>
+                                    <span>We will only send you Mozilla-related information.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- 
+	      Footer Content
+	      ==============
+	-->
+        <footer>
+            <div class="container footer">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="tm-name">
+                            <a href="https://www.mozilla.org/"><img class="logo" src="images/mozilla-logo-white.png" alt="Mozilla Kerala"></a>
+                        </div>
+                        <div>
+                            <span>The <a href="https://www.mozilla.org/">Mozilla Foundation</a> invites all others who support the principles of the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to join with us, and to find new ways to make this vision of the Internet a reality.</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <ul>
+                                    <li><a target="_blank" href="https://www.facebook.com/MozillaKerala">Facebook</a> . <a target="_blank" href="https://www.facebook.com/groups/MozillaKerala/">Facebook Group</a></li>
+                                    <li><a target="_blank" href="https://twitter.com/mozillakerala">Twitter</a> . <a target="_blank" href="https://plus.google.com/communities/114787248813145966099">Google Plus</a></li>
+                                    <li><a target="_blank" href="https://github.com/MozillaKerala">Github</a> . <a target="_blank" href="http://blog.mozillakerala.org/">Blog</a> . <a target="_blank" href="http://blog.mozillakerala.org/">Bugzilla</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <ul>
+                                    <li>Email : <a href="mailto:hello@mozillakerala.org">hello@mozillakerala.org</a></li>
+                                    <li>IRC : <a href="irc://irc.mozilla.org/kerala">#kerala</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="text-center"> Copyleft © Mozilla Kerala 2015. All left reserved. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="http://box2dweb.googlecode.com/svn/trunk/Box2D.js"></script>
+    <script src="https://rawgithub.com/paulirish/1579671/raw/rAF.js"></script>
+    <script src="https://rawgithub.com/abernier/3225993/raw/loop.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/playfox.js"></script>
+    <script src="js/foxyPhysics.js"></script>
+    <script src="https://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 </body>
+
 </html>

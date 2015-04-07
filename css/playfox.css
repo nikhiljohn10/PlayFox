@@ -1,14 +1,15 @@
-html,body{
-	width: 100%;
-	height: 100%;
+html{
+	overflow: auto;
 }
 
-#mouse-hook {
+#foxy{
 	position: absolute;
-	top: 100px;
-	left: 100px;
+	z-index: 10000;
 }
 
+#foxy img{
+	width: 50%;
+}
 
 .paw{
 	position:absolute;
@@ -40,4 +41,25 @@ html,body{
 	}
 
 }
+
+@-webkit-keyframes run{
+	0%{
+		margin-right: 0%;
+	}
+
+	100%{
+		margin-right: -100%;
+	}
+}
+
+@keyframes run{
+	0%{
+		margin-right: 0%;
+	}
+
+	100%{
+		margin-right: -100%;
+	}
+}
+
 

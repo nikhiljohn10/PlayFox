@@ -43,7 +43,7 @@ $(document).ready(function() {
                     left += 20;
                 }
             }
-            $('body').append('<img src="images/fox-paw20.png" class="paw" id="paw' + pawId + '" style="top: ' + top + 'px; left: ' + left + 'px; transform: rotate(' + angle + 'deg);" />');
+            $('body').append('<img src="images/fox-paw.png" class="paw" id="paw' + pawId + '" style="top: ' + top + 'px; left: ' + left + 'px; transform: rotate(' + angle + 'deg);" />');
             setTimeout(function() {
                 $('.paw').each(function() {
                     $(this).css('opacity') < '0.1' && $(this).remove()
@@ -52,4 +52,24 @@ $(document).ready(function() {
             pawId++;
         }
     }));
+});
+
+
+/*
+
+Foxy
+
+*/
+
+var Physics = function () {
+    this.gravity = 0;
+    this.enable = function () {
+        this.gravity = 10;
+    }
+    
+};
+
+
+$(function() {
+    $( "#foxy" ).draggable();
 });

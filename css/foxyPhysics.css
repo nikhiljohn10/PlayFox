@@ -1,0 +1,76 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    width: 100%;
+}
+
+body {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    box-sizing: border-box;
+}
+
+.foxy {
+    display: inline-block;
+    background: url(../images/fox-anime.gif) no-repeat scroll 0px 10px transparent;
+    background-size: 100% 100%;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 100000;
+}
+
+.foxy img {
+    position: relative;
+    width: 100%;
+}
+
+
+.ground{
+    display: inline-block;
+    position: absolute;
+}
+
+.ground.top {
+    width: 100%;
+    left: 0px;
+    top: -40px;
+}
+
+.ground.right {
+    height: 100%;
+    right: 0px;
+    top: 0px;
+}
+
+.ground.bottom {
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+}
+
+.ground.left {
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
